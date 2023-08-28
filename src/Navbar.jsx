@@ -1,5 +1,5 @@
 import { FaShoppingBasket } from 'react-icons/fa';
-import { LuMenu } from "react-icons/lu";
+import { LuAlignJustify } from "react-icons/lu";
 
 export default function Navbar() {
     return(
@@ -15,7 +15,7 @@ export default function Navbar() {
                 </ul>
                 <ul className='Navbar-Menu'>
                     <li className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
-                    <li className='Navbar-Item'><a href="#">< LuMenu size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                    <li className='Navbar-Item'><a href="#">< LuAlignJustify size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
                 </ul>
             </nav>
         </>
