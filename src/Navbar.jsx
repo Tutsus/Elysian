@@ -1,5 +1,5 @@
 import { FaShoppingBasket } from 'react-icons/fa';
-import { LuMenu } from 'react-icons/Lu';
+import { LuMenu } from "react-icons/lu";
 
 export default function Navbar() {
     return(
