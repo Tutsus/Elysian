@@ -3,7 +3,7 @@ import { FaShoppingBasket, LuAlignJustify } from 'react-icons';
 export default function Navbar() {
     return(
         <>
-            <nav className='Navbar'>
+            <nav className='Navbar-Overall'>
                 <a href="#"><img className='Navbar-Logo' src="src\assets\Logo-04.png" alt="Logo" /></a>
                 <ul className='Navbar-List'>
                     <li className='Navbar-Item'><a href="#">HOME</a></li>
