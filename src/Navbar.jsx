@@ -5,7 +5,7 @@ export default function Navbar() {
     return(
         <>
             <nav className='Navbar'>
-                <a href="#"><img className='Navbar-Logo' src="D:\Github\Elysian-Store\Elysian\src\assets\Logo-04.png" alt="Logo" /></a>
+                <a href="#"><img className='Navbar-Logo' src="src\assets\Logo-04.png" alt="Logo" /></a>
                 <ul className='Navbar-List'>
                     <li className='Navbar-Item'><a href="#">HOME</a></li>
                     <li className='Navbar-Item'><a href="#">SHOP</a></li>
