@@ -1,20 +1,21 @@
 import { FaShoppingBasket } from 'react-icons/fa';
-import { PiFlyingSaucerBold } from 'react-icons/pi';
+import { LuMenu } from 'react-icons/Lu';
 
 export default function Navbar() {
     return(
         <>
             <nav className='Navbar'>
-                <div className='Navbar-Logo'>
-                    <h1><PiFlyingSaucerBold /></h1>
-                    <h1>ELYSIAN STORE</h1>
-                </div>
+                <a href="#"><img className='Navbar-Logo' src="src\assets\Logo-04.png" alt="Logo" /></a>
                 <ul className='Navbar-List'>
-                    <li className='Navbar-Item'>HOME</li>
-                    <li className='Navbar-Item'>ABOUT</li>
-                    <li className='Navbar-Item'>SHOP</li>
-                    <li className='Navbar-Item'>CONTACT</li>
-                    <li className='Navbar-Item'><FaShoppingBasket /></li>
+                    <li className='Navbar-Item'><a href="#">HOME</a></li>
+                    <li className='Navbar-Item'><a href="#">SHOP</a></li>
+                    <li className='Navbar-Item'><a href="#">ABOUT</a></li>
+                    <li className='Navbar-Item'><a href="#">CONTACT</a></li>
+                    <li className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                </ul>
+                <ul className='Navbar-Menu'>
+                    <li className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                    <li className='Navbar-Item'><a href="#">< LuMenu size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
                 </ul>
             </nav>
         </>
