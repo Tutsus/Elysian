@@ -1,5 +1,4 @@
-import { FaShoppingBasket } from 'react-icons/fa';
-import { LuAlignJustify } from "react-icons/lu";
+import { FaShoppingBasket, LuAlignJustify } from 'react-icons';
 
 export default function Navbar() {
     return(
