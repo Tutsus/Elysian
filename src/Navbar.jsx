@@ -7,7 +7,7 @@ import Logo from "./assets/Logo-04.png";
 
 
 export default function Navbar() {
-    const [navbarToggle, setNavbarToggle] = useState(false);
+    const [navbarToggle, setNavbarToggle] = useState(true);
 
     function handleNavbar() {
         setNavbarToggle(!navbarToggle);
