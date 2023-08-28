@@ -1,12 +1,11 @@
-import { FaShoppingBasket } from 'react-icons/fa';
-import { FaTshirt } from 'react-icons/FaT';
+import { FaShoppingBasket, FaShirt } from 'react-icons/fa';
 
 export default function Navbar() {
     return(
         <>
             <nav className='Navbar'>
                 <div className='Navbar-Logo'>
-                    <h1><FaTshirt /></h1>
+                    <h1><FaShirt /></h1>
                     <h1>ELYSIAN STORE</h1>
                 </div>
                 <ul className='Navbar-List'>
