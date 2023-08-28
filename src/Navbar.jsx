@@ -1,5 +1,5 @@
 import { FaShoppingBasket } from 'react-icons/fa';
-import { FaTshirt } from 'react-icons/faT';
+import { FaTshirt } from 'react-icons/FaT';
 
 export default function Navbar() {
     return(
