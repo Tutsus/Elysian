@@ -1,3 +1,8 @@
+Tutsus | Elysian Store
+
+Elysian Store is a small store that the designer always create something new for their own shirt with diffrence photos on the shirt.
+Elysian Store created in 1st Sep 2023 by Rithy.
+
 Follow the steps below on how to deploy a vite react app:
 
 01. Create a vite react app
