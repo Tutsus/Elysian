@@ -1,4 +1,4 @@
-import { FaShoppingBasket, FaFacebook, FaGithub, FaInstagram, FaTiktok, FaTelegram } from 'react-icons/fa';
+import { FaShoppingBasket, FaFacebook, FaGithub, FaInstagram, FaTiktok, FaTelegram, FaTimes } from 'react-icons/fa';
 import { RiMenuLine } from "react-icons/ri";
 import { useState } from 'react';
 import Logo from "./assets/Logo-04.png";
@@ -6,9 +6,14 @@ import './Navbar.css'
 
 export default function Navbar() {
     const [navbarToggle, setNavbarToggle] = useState(false);
+    const [cartToggle, setCartToggle] = useState(false);
 
     function handleNavbar() {
         setNavbarToggle(!navbarToggle);
+    }
+
+    function handleCart() {
+        setCartToggle(!cartToggle);
     }
 
     return(
@@ -20,17 +25,16 @@ export default function Navbar() {
                     <li className='Navbar-Item'><a href="#">SHOP</a></li>
                     <li className='Navbar-Item'><a href="#">ABOUT</a></li>
                     <li className='Navbar-Item'><a href="#">CONTACT</a></li>
-                    <li className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                    <li onClick={handleCart} className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
                 </ul>
                 <ul className='Navbar-Menu'>
-                    <li className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                    <li onClick={handleCart} className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
                     <li onClick={handleNavbar} className='Navbar-Item'><a href="#">< RiMenuLine size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
                 </ul>
             </div>
             <div className={navbarToggle ? 'Side-Open' : 'Side-Close'}>
                 <ul className='Side-Menu'>
-                    <li><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Side-Icon'/></a></li>
-                    <li onClick={handleNavbar}><a href="#">< RiMenuLine size={32} color='#FAF1E4' className='Side-Icon'/></a></li>
+                    <li onClick={handleNavbar}><a href="#">< FaTimes size={32} color='#FAF1E4' className='Side-Icon'/></a></li>
                 </ul>
                 <div className='Side-Logo-Design'>
                     <a href="#"><img className='Side-Logo' src={Logo} alt="Logo" /></a>
@@ -49,6 +53,15 @@ export default function Navbar() {
                     <a className='Side-Link' href="#"><FaGithub /></a>
                 </div>
             </div>
+            <div className={cartToggle ? 'Cart-Open' : 'Cart-Close'}>
+                <ul className='Cart-Menu'>
+                    <h1>Shopping Cart</h1>
+                    <li onClick={handleCart}><a href="#">< FaTimes size={32} color='#FAF1E4' className='Cart-Icon'/></a></li>
+                </ul>
+                <div className='Cart-Button'>
+                    <button className='Cart-Continue' type="button"><a href="#">CONTINUE SHOPPING</a></button>
+                </div>
+            </div>                                                                                                                                                                                                                                          
         </nav>
     )
 }

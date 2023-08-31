@@ -7,7 +7,7 @@ export default function Header() {
 
 
     return (
-        <nav>
+        <nav className='Header-Main'>
             <h1>Hello</h1>
         </nav>
     )
