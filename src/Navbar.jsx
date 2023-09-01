@@ -64,8 +64,6 @@ export default function Navbar() {
     )
 }
 
-// Make Elysian Store to Center that look good with toggle
-// Make the hold side to center of height
 // Add hover to every texts, Button, Icon
 // Add transition to Cart and Side
 

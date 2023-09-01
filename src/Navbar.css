@@ -140,6 +140,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: absolute;
+    bottom: 50px;
 }
 
 .Cart-Continue a{
