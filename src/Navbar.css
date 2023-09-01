@@ -42,32 +42,13 @@
     list-style: none;
 }
 
-.Side-Logo {
-    height: auto;
-    width: 85%;
-}
-
-.Side-Logo-Design {
-    margin-top: 5em;
-    position: relative;
-}
-
-.Side-Logo-Design a{
-    display: flex;
-    justify-content: center;
-}
-
-.Side-Menu {
-    display: none;
-    list-style: none;
-}
-
 .Side-Open {
     z-index: 101;
     position: fixed;
     top: 0;
     right: 0;
     max-width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: #435334;
 }
@@ -76,15 +57,28 @@
     display: none;
 }
 
+.Side-Logo {
+    width: auto;
+    height: 55px;
+}
+
+.Side-Menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
 .Side-List {
     list-style: none;
     color: #FAF1E4;
+    position: relative;
+    top: 50px;
 }
 
 .Side-Item {
     letter-spacing: 2px;
     font-weight: bold;
-    border-bottom: #FAF1E4 solid 2px;
+    border-bottom: #FAF1E4 solid 0.2px;
     margin-top: 60px;
     padding-bottom: 5px;
     padding-left: 36px;
@@ -97,7 +91,8 @@
 
 .Side-Link-List {
     text-align: center;
-    margin-top: 30px;
+    position: relative;
+    top: 100px;
 }
 
 .Side-Link {
@@ -184,14 +179,16 @@
         padding: 10px;
     }
     .Side-Item {
-        font-size: 30px;
+        font-size: 25px;
     }
+    
     .Side-Menu {
+        list-style: none;
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         position: relative;
         top: 46px;
-        right: 20px;
+        padding: 0px 20px 0px 20px;
     }
     .Side-Menu a {
         padding: 0;
@@ -232,6 +229,11 @@
     .Side-Link {
         font-size: 30px;
     }
+
+    .Side-Logo {
+        width: auto;
+        height: 50px;
+    }
 }
 
 @media (max-width: 440px) {
@@ -244,8 +246,13 @@
         height: 50px;
     }
 
-    .Side-Item {
-        font-size: 17px;
+    .Cart-Continue {
+        font-size: 20px;
+    }
+
+    .Side-Logo {
+        width: auto;
+        height: 40px;
     }
 }
 
@@ -261,5 +268,14 @@
 
     .Navbar-Icon {
         width: 25px;
+    }
+
+    .Side-Menu {
+        padding-right: 20px;
+    }
+
+    .Side-Logo {
+        width: auto;
+        height: 37px;
     }
 }

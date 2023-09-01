@@ -33,11 +33,9 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className={navbarToggle ? 'Side-Open' : 'Side-Close'}>
-                <ul className='Side-Menu'>
+                <div className='Side-Menu'>
+                    <img className='Side-Logo' src={Logo} alt="Logo" />
                     <li onClick={handleNavbar}><a href="#">< FaTimes size={32} color='#FAF1E4' className='Side-Icon'/></a></li>
-                </ul>
-                <div className='Side-Logo-Design'>
-                    <a href="#"><img className='Side-Logo' src={Logo} alt="Logo" /></a>
                 </div>
                 <div className='Side-List'>
                     <li className='Side-Item'><a href="#">HOME</a></li>
@@ -65,3 +63,12 @@ export default function Navbar() {
         </nav>
     )
 }
+
+// Make Elysian Store to Center that look good with toggle
+// Make the hold side to center of height
+// Add hover to every texts, Button, Icon
+// Add transition to Cart and Side
+
+//Poster
+//Change tam feedback b Kimchu
+//Create a countdown poster
