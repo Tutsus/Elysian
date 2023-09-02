@@ -1,4 +1,8 @@
 /* #435334 #9EB384 #CEDEBD #FAF1E4 */
+a {
+    font-family: sans-serif, serif;
+}
+
 .Navbar-Overall {
     font-family: sans-serif;
     z-index: 100;
