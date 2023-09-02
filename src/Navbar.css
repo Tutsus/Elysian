@@ -4,7 +4,6 @@ body {
 }
 
 .Navbar-Overall {
-    font-family: sans-serif;
     z-index: 100;
     position: sticky;
     top: 0;
@@ -160,7 +159,7 @@ body {
     background-color: #FAF1E4;
     color: #435334;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier,;
     word-spacing: 5px;
     letter-spacing: 1px;
     font-weight: bold;
