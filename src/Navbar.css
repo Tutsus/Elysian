@@ -42,6 +42,13 @@
     list-style: none;
 }
 
+.Navbar-Item a:hover {
+    color: #CEDEBD;
+    border-bottom: #CEDEBD solid 2px;
+    transition: ease-in-out;
+    transition-duration: .2s;
+}
+
 .Side-Open {
     z-index: 101;
     position: fixed;
@@ -142,6 +149,7 @@
     width: 100%;
     position: absolute;
     bottom: 35px;
+    font-family: sans-serif;
 }
 
 .Cart-Continue a{
