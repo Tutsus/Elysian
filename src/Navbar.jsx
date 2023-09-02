@@ -66,7 +66,3 @@ export default function Navbar() {
 
 // Add hover to every texts, Button, Icon
 // Add transition to Cart and Side
-
-//Poster
-//Change tam feedback b Kimchu
-//Create a countdown poster

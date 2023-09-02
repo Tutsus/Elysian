@@ -1,6 +1,10 @@
 /* #435334 #9EB384 #CEDEBD #FAF1E4 */
 a {
-    font-family: sans-serif, serif;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: sans-serif;
 }
 
 .Navbar-Overall {
