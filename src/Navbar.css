@@ -1,6 +1,6 @@
 /* #435334 #9EB384 #CEDEBD #FAF1E4 */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Andale Mono;
 }
 
 .Navbar-Overall {
@@ -177,32 +177,32 @@ body {
     color: #FAF1E4;
 }
 
-.Cart-Continue {
-    position: absolute;
-    bottom: 30px;
-    border: #FAF1E4 solid 2px;
-    background-color: #FAF1E4;
-    padding: 8px;
-    border-radius: 20px;
-    font-size: 25px;
-    font-family: serif;
-}
-
 .Cart-Button {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    position: absolute;
+    bottom: 40px;
+    align-items: center;
     width: 100%;
 }
 
-.Cart-Continue a{
+.Cart-Continue {
+    border: #FAF1E4 solid 2px;
     background-color: #FAF1E4;
-    color: #435334;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    word-spacing: 5px;
-    letter-spacing: 1px;
+    padding: 12px 10px 7px 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: Andale Mono;
     font-weight: bold;
+    transition: all .5s ease-in-out;
+    color: #435334;
+    background-color: #FAF1E4;
+}
+
+.Cart-Continue:hover{
+    color: #FAF1E4;
+    background-color: #435334;
+    transition: all .5s ease-in-out;
 }
 
 
@@ -307,6 +307,15 @@ body {
     .Side-Logo {
         width: auto;
         height: 40px;
+    }
+
+    .Cart-Button {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 50px;
+        align-items: center;
+        width: 100%;
     }
 }
 

@@ -57,7 +57,7 @@ export default function Navbar() {
                     <li onClick={handleCart}><a href="#">< FaTimes size={32} color='#FAF1E4' className='Cart-Icon'/></a></li>
                 </ul>
                 <div className='Cart-Button'>
-                    <button className='Cart-Continue' type="button"><a href="#">CONTINUE SHOPPING</a></button>
+                    <a href="#"><button className='Cart-Continue' type="button" style={{cursor: "pointer"}}>CONTINUE SHOPPING</button></a>
                 </div>
             </div>                                                                                                                                                                                                                                          
         </nav>
