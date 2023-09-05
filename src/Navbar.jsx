@@ -1,7 +1,7 @@
 import { FaShoppingBasket, FaFacebook, FaGithub, FaInstagram, FaTiktok, FaTelegram, FaTimes } from 'react-icons/fa';
 import { RiMenuLine } from "react-icons/ri";
 import { useState } from 'react';
-import Logo from "./assets/Logo-04.png";
+import Logo from "./assets/Logo-01.png";
 import './Navbar.css'
 
 export default function Navbar() {
@@ -25,17 +25,17 @@ export default function Navbar() {
                     <li className='Navbar-Item'><a href="#">SHOP</a></li>
                     <li className='Navbar-Item'><a href="#">ABOUT</a></li>
                     <li className='Navbar-Item'><a href="#">CONTACT</a></li>
-                    <li onClick={handleCart} className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                    <li onClick={handleCart} className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='Black' className='Navbar-Icon'/></a></li>
                 </ul>
                 <ul className='Navbar-Menu'>
-                    <li onClick={handleCart} ><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
-                    <li onClick={handleNavbar} ><a href="#">< RiMenuLine size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                    <li onClick={handleCart} ><a href="#">< FaShoppingBasket size={32} color='Black' className='Navbar-Icon'/></a></li>
+                    <li onClick={handleNavbar} ><a href="#">< RiMenuLine size={32} color='Black' className='Navbar-Icon'/></a></li>
                 </ul>
             </div>
             <div className={navbarToggle ? 'Side-Open' : 'Side-Close'}>
                 <div className='Side-Menu'>
                     <img className='Side-Logo' src={Logo} alt="Logo" />
-                    <li onClick={handleNavbar}><a href="#">< FaTimes size={32} color='#FAF1E4' className='Side-Icon'/></a></li>
+                    <li onClick={handleNavbar}><a href="#">< FaTimes size={32} color='Black' className='Side-Icon'/></a></li>
                 </div>
                 <div className='Side-List'>
                     <li className='Side-Item'><a href="#">HOME</a></li>
@@ -52,10 +52,10 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={cartToggle ? 'Cart-Open' : 'Cart-Close'}>
-                <ul className='Cart-Menu'>
-                    <h1>Shopping Cart</h1>
-                    <li onClick={handleCart}><a href="#">< FaTimes size={32} color='#FAF1E4' className='Cart-Icon'/></a></li>
-                </ul>
+                <div className='Cart-Menu'>
+                    <p className='Cart-Shopping'>Shopping Cart</p>
+                    <li onClick={handleCart}><a href="#">< FaTimes size={32} color='Black' className='Cart-Icon'/></a></li>
+                </div>
                 <div className='Cart-Button'>
                     <a href="#"><button className='Cart-Continue' type="button" style={{cursor: "pointer"}}>CONTINUE SHOPPING</button></a>
                 </div>
@@ -63,6 +63,3 @@ export default function Navbar() {
         </nav>
     )
 }
-
-// Add hover to every texts, Button, Icon
-// Add transition to Cart and Side
