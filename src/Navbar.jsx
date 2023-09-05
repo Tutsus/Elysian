@@ -28,8 +28,8 @@ export default function Navbar() {
                     <li onClick={handleCart} className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
                 </ul>
                 <ul className='Navbar-Menu'>
-                    <li onClick={handleCart} className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
-                    <li onClick={handleNavbar} className='Navbar-Item'><a href="#">< RiMenuLine size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                    <li onClick={handleCart} ><a href="#">< FaShoppingBasket size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
+                    <li onClick={handleNavbar} ><a href="#">< RiMenuLine size={32} color='#FAF1E4' className='Navbar-Icon'/></a></li>
                 </ul>
             </div>
             <div className={navbarToggle ? 'Side-Open' : 'Side-Close'}>
