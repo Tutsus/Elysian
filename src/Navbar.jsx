@@ -2,7 +2,7 @@ import { FaShoppingBasket, FaFacebook, FaGithub, FaInstagram, FaTiktok, FaTelegr
 import { RiMenuLine } from "react-icons/ri";
 import { useState } from 'react';
 import Logo from "./assets/Logo-01.png";
-import './Navbar.css'
+import './App.css'
 
 export default function Navbar() {
     const [navbarToggle, setNavbarToggle] = useState(false);
@@ -53,7 +53,7 @@ export default function Navbar() {
             </div>
             <div className={cartToggle ? 'Cart-Open' : 'Cart-Close'}>
                 <div className='Cart-Menu'>
-                    <p className='Cart-Shopping'>Shopping Cart</p>
+                    <p className='Cart-Shopping'> Your Shopping Cart</p>
                     <li onClick={handleCart}><a href="#">< FaTimes size={32} color='Black' className='Cart-Icon'/></a></li>
                 </div>
                 <div className='Cart-Button'>

@@ -1,5 +1,5 @@
-import './Header.css';
 import Logo from "./assets/Logo-01.png";
+import './App.css'
 
 export default function Header() {
     const slogan = '"T-shirts speak louder than words"';
