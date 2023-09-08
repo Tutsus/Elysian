@@ -93,7 +93,7 @@ body {
 .Side-Open {
   content: '';
   z-index: 101;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   max-width: 100%;
@@ -186,7 +186,7 @@ body {
 .Cart-Open {
   content: '';
   z-index: 100;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   max-width: 100%;
@@ -346,8 +346,7 @@ body {
   box-shadow:
   0px 5px 5.3px rgba(0, 0, 0, 0.04),
   0px 16.8px 17.9px rgba(0, 0, 0, 0.06),
-  0px 75px 80px rgba(0, 0, 0, 0.1)
-;
+  0px 75px 80px rgba(0, 0, 0, 0.1);
 }
 
 .Component-Shirt-Img {
@@ -402,6 +401,140 @@ body {
   background-color: white;
   color: black;
   transition: all .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Footer-Main {
+  margin-bottom: 50px;
+}
+
+.Footer-Customer-Main {
+  display: flex;
+  justify-content: center;
+}
+
+.Footer-Customer-Say {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 60px 0px 60px 0px;
+  text-align: center;
+}
+
+.Footer-Customer-Card {
+  width: 25%;
+  min-width: 18em;
+  display: flex;
+  flex-direction: column;
+  border: black solid 2px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+.Footer-Customer-Feedback {
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  font-size: 20px;
+  line-break: none;
+}
+
+.Footer-Customer-Profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-top: black solid 2px;
+  padding-top: 8px;
+}
+
+.Footer-Customer-Img {
+  width: 4em;
+  border-radius: 50%;
+}
+
+.Footer-Customer-Name {
+  padding-left: 5px;
+  font-weight: 600;
+}
+
+.Footer-Service-Main {
+  display: flex;
+  justify-content: center;
+  margin: 6em 0px 0em 0px;
+  border-top: black solid 2px;
+  border-bottom: black solid 2px;
+}
+
+.Footer-Service-Card {
+  width: 25%;
+  display: flex;
+  padding: 0px 30px;
+}
+
+.Footer-Service-Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Footer-Service-Icon {
+  background-color: black;
+  font-size: 33px;
+  fill: white;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.Footer-Service-Special {
+  font-weight: bold;
+}
+
+.Footer-Navbar-Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.Footer-Navbar-Item a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0px 40px;
+}
+
+.Footer-Navbar-Item {
+  list-style: none;
+  font-size: 22px;
+}
+
+.Footer-Navbar-Item1 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0px 40px;
+}
+
+.Footer-Navbar-Item1 {
+  list-style: none;
+  font-size: 22px;
+}
+
+.Footer-Navbar-Item2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0px 20px;
+}
+
+.Footer-Navbar-Item2 {
+  list-style: none;
+  font-size: 22px;
+}
+
+.Footer-Navbar-Logo {
+  width: auto; 
+  height: 50px;
+  margin: 0px 10px;
 }
 
 @media (min-width: 1100px) {
@@ -470,11 +603,40 @@ body {
       align-items: center;
       width: 100%;
   }
+}
 
-  .Products-BrandNewTee {
-    font-size: 40px;
+@media (max-width: 1000px) {
+  .Footer-Customer-Main {
+    display: flex;
+    flex-wrap: wrap;
   }
 
+  .Footer-Customer-Card {
+    margin-bottom: 20px;
+  }
+
+  .Footer-Service-Card {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .Footer-Navbar-Item a{
+    margin: 0px 20px;
+  }
+
+  .Footer-Navbar-Item1 a{
+    margin: 0px 20px;
+  }
+
+  .Footer-Navbar-Logo {
+    width: auto; 
+    height: 40px;
+  }
+}
+
+@media (min-width: 700px) {
+  .Footer-Navbar-Item2 {
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {
@@ -522,6 +684,57 @@ body {
   .Component-Shirt-Parent {
     width: 60%;
   }
+
+  .Footer-Customer-Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Footer-Customer-Card {
+    margin-bottom: 20px;
+  }
+
+  .Footer-Service-Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .Footer-Service-Card {
+    display: inline;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .Footer-Service-Logo {
+    align-items: center;
+  }
+
+  .Footer-Navbar-Item1 {
+    display: none;
+  }
+
+  .Footer-Navbar-Main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Footer-Navbar-Item {
+    margin: 10px;
+  }
+
+  .Footer-Navbar-Item2 {
+    margin: 10px;
+  }
+
+  .Footer-Navbar-Logo {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -553,7 +766,7 @@ body {
   }
 
   .Products-BrandNewTee {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .Products-Button {
@@ -564,6 +777,14 @@ body {
     padding: 15px 25px;
     border-radius: 15px;
     font-weight: bold;
+  }
+
+  .Footer-Customer-Say {
+    font-size: 30px;
+  }
+
+  .Footer-Customer-Feedback {
+    font-size: 15px;
   }
 }
 
