@@ -15,7 +15,7 @@ export default function ProductsSection() {
                 <ShirtComponent img={WhiteSkull} name={"White Skull"}/>
                 <ShirtComponent img={PubStreet} name={"Pub Street"}/>
             </div>
-            <button className="Products-Button" type="button">Tee Zone is here!!</button>
+            <button className="Products-Button" type="button" style={{cursor: "pointer"}}>Our Tee Zone is right here!</button>
         </nav>
     );
 }

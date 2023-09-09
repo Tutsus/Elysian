@@ -27,6 +27,7 @@ export default function Navbar() {
                     <li className='Navbar-Item'><a href="#">CONTACT</a></li>
                     <li onClick={handleCart} className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='Black' className='Navbar-Icon'/></a></li>
                 </ul>
+                    <p className="Navbar-Item-Total">{0}</p>
                 <ul className='Navbar-Menu'>
                     <li onClick={handleCart} ><a href="#">< FaShoppingBasket size={32} color='Black' className='Navbar-Icon'/></a></li>
                     <li onClick={handleNavbar} ><a href="#">< RiMenuLine size={32} color='Black' className='Navbar-Icon'/></a></li>
@@ -53,7 +54,7 @@ export default function Navbar() {
             </div>
             <div className={cartToggle ? 'Cart-Open' : 'Cart-Close'}>
                 <div className='Cart-Menu'>
-                    <p className='Cart-Shopping'> Your Shopping Cart</p>
+                    <p className='Cart-Shopping'>Shopping Cart</p>
                     <li onClick={handleCart}><a href="#">< FaTimes size={32} color='Black' className='Cart-Icon'/></a></li>
                 </div>
                 <div className='Cart-Button'>

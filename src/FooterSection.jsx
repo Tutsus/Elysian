@@ -1,5 +1,5 @@
 import './App.css'
-import { FaQuoteLeft, FaHandHoldingHeart } from 'react-icons/fa';
+import { FaQuoteLeft, FaHandHoldingHeart, FaFacebook, FaInstagram, FaTiktok, FaTelegram } from 'react-icons/fa';
 import { MdPayment } from 'react-icons/md';
 import { PiPackage } from 'react-icons/pi';
 import FeedbackImg1 from './assets/First Charactor.jpg'
@@ -47,7 +47,7 @@ export default function FooterSection() {
                     </div>
                     <div>
                         <p className='Footer-Service-Special'>SECURE PAYMENT</p>
-                        <p>All our payments our SSL secured</p>
+                        <p className='Footer-Service-Sub'>All our payments our SSL secured</p>
                     </div>
                 </div>
                 <div className='Footer-Service-Card'>
@@ -56,7 +56,7 @@ export default function FooterSection() {
                     </div>
                     <div >
                         <p className='Footer-Service-Special'>DELIVERED WITH CARE</p>
-                        <p>Super fast shipping to your door</p>
+                        <p className='Footer-Service-Sub'>Super fast shipping to your door</p>
                     </div>
                 </div>
                 <div className='Footer-Service-Card'>
@@ -65,7 +65,7 @@ export default function FooterSection() {
                     </div>
                     <div>
                         <p className='Footer-Service-Special'>EXCELLENT SERVICE</p>
-                        <p>Friendly and fast respone</p>
+                        <p className='Footer-Service-Sub'>Friendly and fast respone</p>
                     </div>
                 </div>
             </div>
@@ -78,6 +78,12 @@ export default function FooterSection() {
                 <li className='Footer-Navbar-Item1'><a href="#">ABOUT</a></li>
                 <li className='Footer-Navbar-Item1'><a href="#">CONTACT</a></li>
             </div>
+            {/* <div className='Footer-Navbar-List'>
+                <li><a className='Footer-Navbar-Link' href="#"><FaFacebook />Tee Zone</a></li>
+                <li><a className='Footer-Navbar-Link' href="#"><FaTelegram />Tee Zone</a></li>
+                <li><a className='Footer-Navbar-Link' href="#"><FaInstagram />Tee Zone</a></li>
+                <li><a className='Footer-Navbar-Link' href="#"><FaTiktok />Tee Zone</a></li>
+            </div> */}
         </nav>
     )
 }
