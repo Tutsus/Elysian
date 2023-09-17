@@ -2,7 +2,7 @@ import './App.css'
 import ShirtComponent from './ShirtComponent'
 import dataList from './Data'
 
-export default function ProductsSection({}) {
+export default function ProductsSection() {
 
     return (
         <nav className='Products-Section'>
