@@ -16,8 +16,9 @@ body {
 }
 
 .Navbar-Overall {
-  position: sticky;
-  top: 0px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -66,7 +67,8 @@ body {
   background-color: black;
   color: white;
   border-radius: 100%;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .Navbar-Menu {
@@ -205,7 +207,7 @@ body {
   height: 100%;
   background-color: white;
   transform: translateY(0%);
-  transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+  transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 
 .Cart-Close {
@@ -236,32 +238,33 @@ body {
   padding: 0px 40px;
 }
 
-.Cart-Button {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 40px;
-  align-items: center;
-  width: 100%;
-}
-
 .Cart-Continue {
   border: black solid 2px;
   background-color: white;
   padding: 12px 10px 10px 10px;
   border-radius: 20px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: arial;
   font-weight: bold;
   transition: all .5s ease-in-out;
   color: black;
   background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .Cart-Continue:hover{
   color: #FAF1E4;
   background-color: black;
   transition: all .5s ease-in-out;
+}
+
+.Cart-Continue-Icon {
+  padding: 0px 15px 0px 10px;
 }
 
 .Header-Main {
@@ -351,15 +354,13 @@ body {
 }
 
 .Component-Shirt-Parent {
+  background: rgb(0,0,0);
+  background: linear-gradient(42deg, rgba(0,0,0,0) 0%, rgba(219,219,219,1) 100%);
   margin: 10px 15px;
   padding: 10px 10px;
   border: black solid 3px;
   border-radius: 20px;
   width: 20%;
-  box-shadow:
-  0px 5px 5.3px rgba(0, 0, 0, 0.04),
-  0px 16.8px 17.9px rgba(0, 0, 0, 0.06),
-  0px 75px 80px rgba(0, 0, 0, 0.1);
 }
 
 .Component-Shirt-Img {
@@ -635,15 +636,8 @@ body {
       height: 30px;
   }
 
-  .Cart-Menu h1{
-      font-size: 22px;
-  }
-
-  .Cart-Button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+  .Cart-Continue {
+    font-size: 15px;
   }
 
   .Component-Shirt-Parent {
@@ -726,6 +720,10 @@ body {
   }
   .Header-Shop {
       font-size: 20px;
+  }
+
+  .Cart-Continue {
+    font-size: 12px;
   }
 
   .Component-Products {
@@ -814,22 +812,9 @@ body {
       height: 50px;
   }
 
-  .Cart-Continue {
-      font-size: 20px;
-  }
-
   .Side-Logo {
       width: auto;
       height: 40px;
-  }
-
-  .Cart-Button {
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      bottom: 50px;
-      align-items: center;
-      width: 100%;
   }
 
   .Products-BrandNewTee {
@@ -844,6 +829,22 @@ body {
     padding: 15px 25px;
     border-radius: 15px;
     font-weight: bold;
+  }
+
+  .Cart-Shopping {
+    margin-left: -20px;
+  }
+  
+  .Cart-Continue {
+    margin: 0px -20px;
+  }
+
+  .Cart-Continue-Icon{
+    padding: 0px 5px 0px 0px;
+  }
+
+  .Cart-Menu {
+    display: flex;
   }
 
   .Component-Shirt-Parent {
@@ -905,9 +906,6 @@ body {
       height: 37px;
   }
 
-  .Cart-Menu {
-      padding: 0;
-  }
   .Navbar-Item-Total {
     position: absolute;
     right: 85px;

@@ -1,5 +1,5 @@
 import './App.css'
-import { FaQuoteLeft, FaHandHoldingHeart, FaFacebook, FaInstagram, FaTiktok, FaTelegram } from 'react-icons/fa';
+import { FaQuoteLeft, FaHandHoldingHeart } from 'react-icons/fa';
 import { MdPayment } from 'react-icons/md';
 import { PiPackage } from 'react-icons/pi';
 import FeedbackImg1 from './assets/First Charactor.jpg'

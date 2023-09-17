@@ -1,4 +1,4 @@
-import { FaShoppingBasket, FaFacebook, FaGithub, FaInstagram, FaTiktok, FaTelegram, FaTimes } from 'react-icons/fa';
+import { FaShoppingBasket, FaFacebook, FaGithub, FaInstagram, FaTiktok, FaTelegram, FaTimes, FaArrowLeft } from 'react-icons/fa';
 import { RiMenuLine } from "react-icons/ri";
 import { useState } from 'react';
 import Logo from "./assets/Logo-01.png";
@@ -25,9 +25,17 @@ export default function Navbar() {
                     <li className='Navbar-Item'><a href="#">SHOP</a></li>
                     <li className='Navbar-Item'><a href="#">ABOUT</a></li>
                     <li className='Navbar-Item'><a href="#">CONTACT</a></li>
-                    <li onClick={handleCart} className='Navbar-Item'><a href="#">< FaShoppingBasket size={32} color='Black' className='Navbar-Icon'/></a></li>
+                    <li onClick={handleCart} className='Navbar-Item'>
+                        <a href="#">
+                            < FaShoppingBasket 
+                            size={32} 
+                            color='Black' 
+                            className='Navbar-Icon'/>
+                        </a>
+                    </li>
+                    
                 </ul>
-                    <p className="Navbar-Item-Total">{0}</p>
+                    {/* <p className="Navbar-Item-Total">{teeCount}</p> */}
                 <ul className='Navbar-Menu'>
                     <li onClick={handleCart} ><a href="#">< FaShoppingBasket size={32} color='Black' className='Navbar-Icon'/></a></li>
                     <li onClick={handleNavbar} ><a href="#">< RiMenuLine size={32} color='Black' className='Navbar-Icon'/></a></li>
@@ -54,13 +62,15 @@ export default function Navbar() {
             </div>
             <div className={cartToggle ? 'Cart-Open' : 'Cart-Close'}>
                 <div className='Cart-Menu'>
-                    <p className='Cart-Shopping'>Shopping Cart</p>
-                    <li onClick={handleCart}><a href="#">< FaTimes size={32} color='Black' className='Cart-Icon'/></a></li>
+                    <p className='Cart-Shopping'>My Cart</p>
+                    <div className='Cart-Button'>
+                    <a href="#"><button className='Cart-Continue' onClick={handleCart} type="button" style={{cursor: "pointer"}}><FaArrowLeft className='Cart-Continue-Icon' />CONTINUE SHOPPING</button></a>
+                    </div>
                 </div>
-                <div className='Cart-Button'>
-                    <a href="#"><button className='Cart-Continue' type="button" style={{cursor: "pointer"}}>CONTINUE SHOPPING</button></a>
+                <div>
+
                 </div>
-            </div>                                                                                                                                                                                                                                          
+            </div>                                                                                                                                                                                                                                         
         </nav>
     )
 }

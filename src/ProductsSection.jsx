@@ -1,16 +1,8 @@
 import './App.css'
-import { useState } from 'react';
 import ShirtComponent from './ShirtComponent'
 import dataList from './Data'
-export default function ProductsSection(teeNum, setTeeNum) {
 
-    const [totalTeeNum, setTotalTeeNum] = useState(1);
-
-    function handleTeeNum() {
-        setTeeNum(teeNum + 1);
-        setTotalTeeNum(teeNum);
-        console.log(totalTeeNum);
-    }
+export default function ProductsSection({}) {
 
     return (
         <nav className='Products-Section'>
@@ -20,7 +12,10 @@ export default function ProductsSection(teeNum, setTeeNum) {
             <div className='Component-Products'>
                 {
                     dataList.map((item)=> 
-                    (<ShirtComponent key={item.id} item={item}/>))
+                    (<ShirtComponent 
+                        key={item.id} 
+                        item={item}
+                    />))
                 }
             </div>
         </nav>
