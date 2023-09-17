@@ -1,11 +1,11 @@
 import KillorDie from "./assets/Black - Kill or Die-03.png";
-import DeathInside from "src/assets/Black - Death Inside-03.png";
-import GodofLight from "src/assets/Black - God of Light-03.png";
-import PubStreet from "src/assets/Black - Pub Street-03.png";
-import Beboldbeyou from "src/assets/White - Be bold, be you-03.png";
-import BeTheChangemaker from "src/assets/White - Be the changemaker-03.png";
-import PeacefulWorld from "src/assets/White - Peaceful World-03.png";
-import Changemaker from "src/assets/White - Changemaker-03.png";
+import DeathInside from "./assets/Black - Death Inside-03.png";
+import GodofLight from "./assets/Black - God of Light-03.png";
+import PubStreet from "./assets/Black - Pub Street-03.png";
+import Beboldbeyou from "./assets/White - Be bold, be you-03.png";
+import BeTheChangemaker from "./assets/White - Be the changemaker-03.png";
+import PeacefulWorld from "./assets/White - Peaceful World-03.png";
+import Changemaker from "./assets/White - Changemaker-03.png";
 import WhiteSkull from "./assets/Black - White Skull-03.png";
 import PurpleButterfly from "./assets/Black - Purple Butterfly-03.png";
 
