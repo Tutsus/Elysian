@@ -1,8 +1,10 @@
+import KillorDie from "src/assets/Black - Kill or Die-03.png";
+
 const dataList = 
     [
         {
             id: 1,
-            img: "src/assets/Black - Kill or Die-03.png",
+            img: KillorDie,
             name: "Kill or Die",
             price: 9.99,
         },
