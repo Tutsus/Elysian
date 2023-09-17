@@ -1,4 +1,4 @@
-import KillorDie from "src/assets/Black - Kill or Die-03.png";
+import KillorDie from "./assets/Black - Kill or Die-03.png";
 
 const dataList = 
     [
